@@ -134,10 +134,7 @@ const Header = () => {
               <div className="w-10 h-10 bg-[#D2AF34] rounded-full flex items-center justify-center">
                 <Scale className="text-white" size={20} />
               </div>
-              <div className="text-sm">
-                <div className="font-bold text-gray-900">محمد مصطفى</div>
-                <div className="text-xs text-gray-600">مستشار قانوني</div>
-              </div>
+          
             </div>
             {/* Middle Navigation */}
             <nav className="hidden md:flex  gap-8">

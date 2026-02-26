@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.slick-dots li button:before {
+  color: #ffffff !important;
+  opacity: 0.4;
+  font-size: 18px;
+  transition: 0.3s;
+ 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #D2AF34 !important; /* تخلي النشطة ذهبي */
+  opacity: 1;
+}

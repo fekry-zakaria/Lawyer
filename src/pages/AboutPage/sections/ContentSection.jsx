@@ -30,14 +30,15 @@ const ContentSection = () => {
             transition={{ duration: 0.8 }}
           >
             {/* صورة البروفايل */}
-            <div className="flex-shrink-0">
-              <img
-                src={profile}
-                alt="Profile"
-                className="w-64 h-64 object-cover rounded-xl border-4 border-[#D2AF34]"
-              />
-            </div>
+ <div className="flex-shrink-0 relative flex justify-center">
+  <div className="absolute w-72 h-72 bg-gradient-to-tr from-[#D2AF34] to-yellow-600 rounded-full blur-3xl opacity-20"></div>
 
+  <img
+    src={profile}
+    alt="Profile"
+    className="w-64 h-64 object-cover rounded-full border-4 border-[#D2AF34] shadow-2xl relative"
+  />
+</div>
             {/* المعلومات الشخصية */}
             <div className="flex-1 w-full">
               <h2 className="text-lg md:text-2xl font-bold mb-6 text-[#D2AF34] flex items-center gap-2">

@@ -46,13 +46,13 @@ const ImageSlider = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <motion.h1 className="text-2xl md:text-7xl font-bold mb-6 leading-tight">
+      <motion.h1 className="text-2xl md:text-5xl font-bold mb-6 leading-tight">
         أهلا وسهلاً بكم في موقع
       </motion.h1>
-      <motion.h1 className="text-2xl md:text-7xl font-bold mb-6 text-[#D2AF34] leading-tight">
+      <motion.h1 className="text-2xl md:text-5xl font-bold mb-6 text-[#D2AF34] leading-tight">
         المستشار القانوني محمد مصطفى
       </motion.h1>
-      <motion.p className="text-lg md:text-2xl max-w-4xl mx-auto mb-12 leading-relaxed">
+      <motion.p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 leading-relaxed">
         نحن نخبة من المحامين والمستشارين القانونيون السعوديين وغير السعوديين 
         نسعد بخدمتكم لتقديم الاستشارات القانونية ودراسة القضايا والترافع في كافة 
         أنواع القضايا وتأسيس الشركات وصياغة العقود واللوائح

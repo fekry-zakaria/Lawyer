@@ -3,6 +3,21 @@ import { motion } from 'framer-motion';
 import { FiSend, FiBriefcase, FiMapPin, FiClock, FiCalendar } from 'react-icons/fi';
 
 const ContentSection = ({ jobs, formData, handleSubmit, handleChange, setFormData }) => {
+  const highlights = [
+    {
+      id: 1,
+      text: 'نحن لا نبحث عن موظفين فحسب، بل نبحث عن شركاء يشاركوننا الشغف لصناعة المستقبل. انضم إلى فريقنا المبدع وساهم في تحويل الأفكار العظيمة إلى واقع ملموس في بيئة عمل تدعم الابتكار والنمو المستمر.',
+    },
+    {
+      id: 2,
+      text: 'كن جزءاً من مسيرتنا نحو التميز. نوفر لك بيئة عمل احترافية تفتح لك آفاقاً واسعة للتطور المهني، ونقدر الكفاءات التي تسعى لتقديم قيمة مضافة في المجال القانوني.',
+    },
+    {
+      id: 3,
+      text: 'شاركنا النجاح.. ابدأ رحلتك المهنية معنا في بيئة تقدر الإبداع وتكافئ التميز. استعرض الوظائف المتاحة الآن وانضم إلى فريقنا.',
+    },
+  ];
+
   return (
     <div className="relative z-10 px-6 py-12">
       <div className="max-w-6xl mx-auto">
@@ -14,6 +29,40 @@ const ContentSection = ({ jobs, formData, handleSubmit, handleChange, setFormDat
         >
           الوظائف
         </motion.h1>
+
+        <motion.div
+          className="bg-[#171616] backdrop-blur-sm rounded-lg p-8 mb-12 border border-gray-700"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+        >
+          <motion.h2
+            className="text-2xl font-bold text-yellow-400 mb-6 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            فرصتك لتكون جزءاً من فريقنا
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {highlights.map((item, index) => (
+              <motion.div
+                key={item.id}
+                className="bg-black rounded-lg p-6 border border-gray-700 hover:border-[#D2AF34] transition-colors"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.35 + index * 0.15 }}
+                whileHover={{ scale: 1.03 }}
+              >
+                <div className="w-10 h-10 rounded-full bg-[#D2AF34] flex items-center justify-center mb-4">
+                  <span className="text-black font-bold">{item.id}</span>
+                </div>
+                <p className="text-gray-200 leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Job Listings */}
