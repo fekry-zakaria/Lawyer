@@ -10,7 +10,7 @@ const ImageSlider = () => {
   const images = [img1, img2, img3, img4];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
