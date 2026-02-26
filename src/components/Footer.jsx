@@ -51,18 +51,33 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
 
               <div className="flex items-center gap-2">
-                <FaEnvelope className="text-[#D2AF34]" />
-                <span>mohamedmoostafa.124@gmail.com</span>
+             <a 
+    href="mailto:mohamedmoostafa.124@gmail.com"
+    className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+  >
+    <FaEnvelope className="text-[#D2AF34]" />
+    <span>mohamedmoostafa.124@gmail.com</span>
+  </a>
               </div>
 
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-[#D2AF34]" />
-                <span>+966 56 633 6181 KSA</span>
+                <a 
+    href="tel:+966566336181"
+    className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+  >
+    <FaPhoneAlt className="text-[#D2AF34]" />
+    <span>+966 56 633 6181 KSA</span>
+  </a>
               </div>
 
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-[#D2AF34]" />
-                <span>+20 111 758 6879 EGY</span>
+             <a 
+    href="tel:+201117586879"
+    className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+           >
+              <FaPhoneAlt className="text-[#D2AF34]" />
+             <span>+20 111 758 6879 EGY</span>
+   </a>
               </div>
 
             </div>
