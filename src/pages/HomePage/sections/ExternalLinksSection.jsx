@@ -68,7 +68,7 @@ const settings = {
             rel="noopener noreferrer"
             className="block bg-[#D2AF34] border border-gray-700 rounded-xl p-6 text-center hover:border-[#D2AF34] transition-all duration-300 hover:scale-105"
           >
-         <div className="w-full h-48 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4">
+     <div className="w-full aspect-[4/3] mx-auto mb-4 bg-white rounded-xl flex items-center justify-center p-4">
   <img
     className="max-h-full max-w-full object-contain"
     src={link.image}
