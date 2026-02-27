@@ -37,7 +37,9 @@ const Header = () => {
           <div className="flex items-center space-x-4 space-x-reverse">
             <div className="flex items-center space-x-3 space-x-reverse">
               <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/in/mohamed-mostafa-973936168/"  
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-yellow-200 transition-colors"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}

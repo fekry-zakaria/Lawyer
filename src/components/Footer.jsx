@@ -1,5 +1,6 @@
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaScaleBalanced } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,17 +25,25 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-[#D2AF34] font-semibold mb-4 text-lg">
+          
               روابط سريعة
+             
             </h3>
             <ul className="space-y-3 text-sm">
-              <li className="hover:text-[#D2AF34] cursor-pointer transition">
+              <li className="hover:text-[#D2AF34] cursor-pointer transition"> 
+                 <NavLink  to="/services">
                 خدماتنا
+                </NavLink >
               </li>
               <li className="hover:text-[#D2AF34] cursor-pointer transition">
+                   <NavLink to="/contact" >
                 اتصل بنا
+                </NavLink>
               </li>
               <li className="hover:text-[#D2AF34] cursor-pointer transition">
+                   <NavLink  to="/jobs" >
                 الوظائف
+                </NavLink>
               </li>
               <li className="hover:text-[#D2AF34] cursor-pointer transition">
                 دخول الإدارة

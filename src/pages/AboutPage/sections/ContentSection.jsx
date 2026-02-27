@@ -61,7 +61,7 @@ const ContentSection = () => {
                   <FiCalendar className="text-[#D2AF34]" size={28} />
                   <div>
                     <p className="text-sm text-gray-300">تاريخ الميلاد</p>
-                    <p className="text-sm md:text-lg font-semibold text-white">1 يناير 1985</p>
+                    <p className="text-sm md:text-lg font-semibold text-white">1 مارس 1990</p>
                   </div>
                 </div>
 
