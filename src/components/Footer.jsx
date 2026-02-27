@@ -53,6 +53,8 @@ const Footer = () => {
               <div className="flex items-center gap-2">
              <a 
     href="mailto:mohamedmoostafa.124@gmail.com"
+     target="_blank"
+  rel="noopener noreferrer"
     className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
   >
     <FaEnvelope className="text-[#D2AF34]" />
@@ -66,7 +68,7 @@ const Footer = () => {
     className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
   >
     <FaPhoneAlt className="text-[#D2AF34]" />
-    <span>+966 56 633 6181 KSA</span>
+    <span dir="ltr">+966 56 633 6181 KSA</span>
   </a>
               </div>
 
@@ -76,7 +78,7 @@ const Footer = () => {
     className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
            >
               <FaPhoneAlt className="text-[#D2AF34]" />
-             <span>+20 111 758 6879 EGY</span>
+             <span dir="ltr">+20 111 758 6879 EGY</span>
    </a>
               </div>
 
