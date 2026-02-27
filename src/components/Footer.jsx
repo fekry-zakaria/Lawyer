@@ -30,24 +30,24 @@ const Footer = () => {
              
             </h3>
             <ul className="space-y-3 text-sm">
-              <li className="hover:text-[#D2AF34] cursor-pointer transition"> 
+              <li  onClick={() => window.scrollTo(0, 0)} className="hover:text-[#D2AF34] cursor-pointer transition"> 
                  <NavLink  to="/services">
                 خدماتنا
                 </NavLink >
-              </li>
-              <li className="hover:text-[#D2AF34] cursor-pointer transition">
+              </li> 
+              <li  onClick={() => window.scrollTo(0, 0)} className="hover:text-[#D2AF34] cursor-pointer transition">
                    <NavLink to="/contact" >
                 اتصل بنا
                 </NavLink>
               </li>
-              <li className="hover:text-[#D2AF34] cursor-pointer transition">
+              <li  onClick={() => window.scrollTo(0, 0)} className="hover:text-[#D2AF34] cursor-pointer transition">
                    <NavLink  to="/jobs" >
                 الوظائف
                 </NavLink>
               </li>
-              <li className="hover:text-[#D2AF34] cursor-pointer transition">
+              {/* <li  onClick={() => window.scrollTo(0, 0)} className="hover:text-[#D2AF34] cursor-pointer transition">
                 دخول الإدارة
-              </li>
+              </li> */}
             </ul>
           </div>
 
