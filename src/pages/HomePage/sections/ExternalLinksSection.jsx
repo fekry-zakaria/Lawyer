@@ -26,17 +26,20 @@ const ExternalLinksSection = () => {
 const settings = {
   dots: true,
   infinite: true,
-  speed: 1000,
+  speed: 800,
   slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
   arrows: false,
+  centerMode: false,
   responsive: [
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "20px", // 👈 أهم حاجة
       },
     },
   ],
@@ -72,7 +75,7 @@ const settings = {
     alt={link.name}
   />
 </div>
-            <p className="text-[#171616] font-semibold">
+            <p className="text-[#171616] font-semibold text-xs">
               {link.name}
             </p>
             <div className="flex items-center justify-center mt-3 text-[#171616]">
