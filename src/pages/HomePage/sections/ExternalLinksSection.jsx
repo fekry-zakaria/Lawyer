@@ -13,7 +13,7 @@ const ExternalLinksSection = () => {
     image: img2,
   },
   {
-    name: "البوابة القانونية للأنظمة والتشريعات السعودية",
+    name: "البوابة القانونية للأنظمة",
     url: "https://laws.moj.gov.sa/ar",
     image: img3,
   },
@@ -34,59 +34,65 @@ const settings = {
   arrows: false,
   centerMode: false,
   responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: "20px", // 👈 أهم حاجة
-      },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: "24px"
     },
-  ],
+  },
+],
 };
 
 
 
   return (
-    <section className="py-10 relative z-10 px-6">
-  
+    <section className="py-10 relative z-10 px-4 sm:px-6">
+      <motion.div
+        className="max-w-5xl mx-auto px-2 sm:px-4"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-[#D2AF34] mb-4 sm:mb-6">
+          روابط قانونية مهمة
+        </h2>
+        <h2 className="text-center text-base sm:text-xl font-bold text-white mb-6 sm:mb-8">
+          وصول سريع لأهم الجهات والمنصات القانونية
+        </h2>
 
-  <div className="max-w-5xl mx-auto px-4">
-    <h2 className="text-center text-4xl font-bold text-[#D2AF34] mb-8">
-    روابط قانونية مهمة
-  </h2>
-   <h2 className="text-center text-xl font-bold text-white mb-8">
-وصول سريع لأهم الجهات والمنصات القانونية
-  </h2>
- 
-    <Slider {...settings}>
-      {externalLinks.map((link, index) => (
-        <div key={index} className="px-4">
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block bg-[#D2AF34] border border-gray-700 rounded-xl p-6 text-center hover:border-[#D2AF34] transition-all duration-300 hover:scale-105"
-          >
-     <div className="w-full aspect-[4/3] mx-auto mb-4 bg-white rounded-xl flex items-center justify-center p-4">
-  <img
-    className="max-h-full max-w-full object-contain"
-    src={link.image}
-    alt={link.name}
-  />
-</div>
-            <p className="text-[#171616] font-semibold text-xs">
-              {link.name}
-            </p>
-            <div className="flex items-center justify-center mt-3 text-[#171616]">
-              <FiExternalLink size={18} />
+        <Slider {...settings}>
+          {externalLinks.map((link, index) => (
+            <div key={index} className="px-2 sm:px-4 py-2">
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-[#D2AF34] border border-gray-700 rounded-xl p-4 sm:p-6 text-center hover:border-[#D2AF34] transition-all duration-300 hover:scale-105"
+              >
+                <div className="w-full h-32 sm:h-40 md:h-48 mx-auto mb-4 bg-white rounded-xl overflow-hidden flex items-center justify-center p-3 sm:p-4">
+                  <img
+                    className="w-full h-full object-contain"
+                    src={link.image}
+                    alt={link.name}
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-[#171616] font-semibold text-sm sm:text-base leading-snug">
+                  {link.name}
+                </p>
+                <div className="flex items-center justify-center mt-3 text-[#171616]">
+                  <FiExternalLink size={18} />
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-      ))}
-    </Slider>
-  </div>
-</section>
+          ))}
+        </Slider>
+      </motion.div>
+    </section>
   );
 };
 
