@@ -17,7 +17,7 @@ const LegalDocumentsSection = () => {
         </motion.h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: FiFile, title: 'عقود تجارية', desc: 'نماذج عقود تجارية جاهزة' },
+            { icon: FiFile, title: 'عقود ', desc:'نماذج عقود قانونية جاهزة' },
             { icon: FaBalanceScale, title: 'لوائح قانونية', desc: 'مجموعة اللوائح والأنظمة' },
             { icon: FiAward, title: 'سوابق قضائية', desc: 'أهم الأحكام القضائية' },
             { icon: FiFile, title: 'استشارات سابقة', desc: 'نماذج استشارات قانونية' },

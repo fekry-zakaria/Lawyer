@@ -36,7 +36,7 @@ const InfoSection = () => {
             </div>
             <div className="px-3">
               <p className="text-sm text-gray-400">البريد الإلكتروني</p>
-              <p className="font-semibold text-white">mohamedmostafa124@gmail.com</p>
+              <p className="text-xs md:text-lg font-semibold text-white">mohamedmostafa124@gmail.com</p>
             </div>
           </div>
 
@@ -46,8 +46,8 @@ const InfoSection = () => {
             </div>
             <div className="px-3">
               <p className="text-sm text-gray-400">المقر الرئيسي</p>
-              <p className="font-semibold text-white">الرياض، المملكة العربية السعودية</p>
-              <p className="font-semibold text-white">القاهرة، جمهورية مصر العربية</p>
+              <p className="text-xs md:text-lg font-semibold text-white">الرياض، المملكة العربية السعودية</p>
+              <p className="text-xs md:text-lg font-semibold text-white">القاهرة، جمهورية مصر العربية</p>
             </div>
           </div>
         </div>
@@ -67,14 +67,14 @@ const InfoSection = () => {
               <FiClock className="text-[#D2AF34]" size={20} />
               <span className="px-2">الأحد - الخميس</span>
             </div>
-            <span className="font-semibold text-white">9:00 ص - 6:00 م</span>
+            <span className="text-xs md:text-lg font-semibold text-white">9:00 ص - 6:00 م</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 space-x-reverse text-white">
               <FiClock className="text-[#D2AF34]" size={20} />
               <span className="px-2">السبت</span>
             </div>
-            <span className="font-semibold text-white">10:00 ص - 2:00 م</span>
+            <span className="text-xs md:text-lg font-semibold text-white">10:00 ص - 2:00 م</span>
           </div>
         </div>
       </motion.div>

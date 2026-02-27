@@ -6,7 +6,7 @@ const FloatingWhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "201153404836"; // بدون +
+    const phoneNumber = "+966566336181"; // بدون +
     const message =
       "مرحباً، أود الاستفسار عن خدماتكم القانونية - مرسل من الموقع الرسمي";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
