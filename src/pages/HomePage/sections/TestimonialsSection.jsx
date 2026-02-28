@@ -1,26 +1,23 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiStar } from 'react-icons/fi';
-import img1 from '../../../assets/encino.webp';
-import img2 from '../../../assets/GettyImages.webp';
-import img3 from '../../../assets/SeattleLawyer.webp';
 const TestimonialsSection = () => {
   const [testimonials] = useState([
     {
       name: 'عميل',
-      image: img1,
+      image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238489/encino_qmbjae.webp",
       rating: 5,
       text: 'تجربة متميزة تعكس أعلى معايير الاحترافية؛ لم يكن مجرد تمثيل قانوني، بل شعرت بوجود شريك حقيقي يحرص على مصلحتي ويولي أدق التفاصيل اهتماماً فائقاً. الوضوح في طرح الحلول القانونية كان مفتاح النجاح في قضيتي.',
     },
     {
       name: 'عميل',
-      image: img2,
+      image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238488/SeattleLawyer_le2ope.webp",
       rating: 5,
       text: 'ما يميز التعامل هنا هو الاستجابة السريعة والقدرة العالية على تحليل الموقف القانوني بدقة. حصلت على نتائج تجاوزت توقعاتي بفضل الخبرة العميقة والالتزام المهني الذي قل نظيره.',
     },
     {
       name: 'عميل',
-      image: img3,
+      image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238489/GettyImages_tvrpjj.webp",
       rating: 5,
       text: '"احترافية في التعامل، دقة في المواعيد، ومعرفة قانونية واسعة. أنصح بشدة بكل من يبحث عن حلول قانونية مبتكرة وآمنة."',
     },

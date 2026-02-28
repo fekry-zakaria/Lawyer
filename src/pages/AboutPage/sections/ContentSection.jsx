@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiUser, FiBriefcase, FiAward, FiBookOpen, FiGlobe, FiPhone, FiCalendar } from 'react-icons/fi';
-import profile from '../../../assets/lawyer.jpeg';
+
 
 const ContentSection = () => {
   return (
@@ -34,7 +34,7 @@ const ContentSection = () => {
   <div className="absolute w-72 h-72 bg-gradient-to-tr from-[#D2AF34] to-yellow-600 rounded-full blur-3xl opacity-20"></div>
 
   <img
-    src={profile}
+    src='https://res.cloudinary.com/doryabvem/image/upload/v1772238489/lawyer_baz6pp.jpg'
     alt="Profile"
     className="w-64 h-64 object-cover rounded-full border-4 border-[#D2AF34] shadow-2xl relative"
   />

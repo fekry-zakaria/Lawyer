@@ -2,25 +2,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 import Slider from "react-slick";
-import img2 from '../../../assets/bar-logo1-copy.png';
-import img3 from '../../../assets/download.png';
-import img4 from '../../../assets/logo.png';
+
 const ExternalLinksSection = () => {
   const externalLinks = [
   {
     name: "نقابة المحامين المصرية",
     url: "https://egyls.com",
-    image: img2,
+    image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238296/bar-logo1-copy_tmszxc.png",
   },
   {
     name: "البوابة القانونية للأنظمة",
     url: "https://laws.moj.gov.sa/ar",
-    image: img3,
+    image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238296/download_hwyelq.png",
   },
   {
     name: "موسوعة العدالة القانونية",
     url: "https://eladalah.com/Account/Login",
-    image: img4,
+    image: "https://res.cloudinary.com/doryabvem/image/upload/v1772238296/logo_c2jfxt.png",
   },
 ];
 const settings = {

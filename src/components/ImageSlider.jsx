@@ -1,13 +1,15 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.webp'
-import img3 from '../assets/img3.webp'
-import img4 from '../assets/img4.webp'
+
 import { motion } from 'framer-motion';
 const ImageSlider = () => {
-  const images = [img1, img2, img3, img4];
+  const images = [
+    "https://res.cloudinary.com/doryabvem/image/upload/v1772237982/img2_ykzusz.webp",
+    "https://res.cloudinary.com/doryabvem/image/upload/v1772237987/img1_riionx.jpg",
+    "https://res.cloudinary.com/doryabvem/image/upload/v1772237982/img3_dvj0mj.webp",
+    "https://res.cloudinary.com/doryabvem/image/upload/v1772237982/img4_ef69ts.webp",
+  ];
 
   const settings = {
     dots: false,
