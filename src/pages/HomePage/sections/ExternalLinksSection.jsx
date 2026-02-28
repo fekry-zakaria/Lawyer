@@ -71,7 +71,7 @@ const settings = {
                 rel="noopener noreferrer"
                 className="block bg-[#D2AF34] border border-gray-700 rounded-xl p-4 sm:p-6 text-center hover:border-[#D2AF34] transition-all duration-300 hover:scale-105"
               >
-                <div className="w-full h-32 sm:h-40 md:h-48 mx-auto mb-4 bg-white rounded-xl overflow-hidden flex items-center justify-center p-3 sm:p-4">
+                <div className="w-full h-32 sm:h-40 md:h-30 mx-auto mb-4 bg-white rounded-xl overflow-hidden flex items-center justify-center p-3 sm:p-4">
                   <img
                     className="w-full h-full object-contain"
                     src={link.image}
